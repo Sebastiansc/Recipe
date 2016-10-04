@@ -53,6 +53,27 @@
     </ol>
   </section>
 
+  <section>
+    <form action="/reviews" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="review[username]">
+      <label for="rating">Rating</label>
+      <input type="radio" id="rating" name="review[rating]" value="1" selected>
+      <input type="radio" id="rating" name="review[rating]" value="2" selected>
+      <input type="radio" id="rating" name="review[rating]" value="3" selected>
+      <input type="radio" id="rating" name="review[rating]" value="4" selected>
+      <input type="radio" id="rating" name="review[rating]" value="5" selected>
+      <label for="expertise">Cooking Expertise</label>
+      <select name="review[expertise]">
+        <option value="" disabled>Select Cooking Expertise</option>
+        <option value="begginer">Sometimes Cook</option>
+        <option value="novice">Cook Everyday</option>
+        <option value="amateur">Cooking is a hobby</option>
+        <option value="professional">Professional Chef</option>
+      </select>
+    </form>
+  </section>
+
   <footer>
     <p>
       Recipe by The New York Times
